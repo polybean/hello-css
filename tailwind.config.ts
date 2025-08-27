@@ -6,12 +6,22 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  important: "body",
+  important: "html",
   corePlugins: {
     preflight: false,
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "brand-green": "var(--brand-green)",
+        "dark-green": "var(--dark-green)",
+        "medium-green": "var(--medium-green)",
+        "text-color": "var(--text-color)",
+        gray: "var(--gray)",
+        "light-gray": "var(--light-gray)",
+        "extra-light-gray": "var(--extra-light-gray)",
+      },
+    },
   },
   plugins: [],
 };
